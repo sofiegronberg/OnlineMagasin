@@ -1,0 +1,523 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "sukhumvit set", sans-serif;
+}
+
+html,
+#forside1 {
+    width: 100%;
+    height: 100%;
+    background-color: #eaeaea;
+}
+
+.artiklerbody {
+    background-color: white;
+}
+
+/* Navigation */
+header {
+    background-color: white;
+}
+
+nav {
+    border-bottom: 1.5px solid #EAEAEB;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 50px;
+    clear: right;
+    font-size: 15px;
+    background-color: white;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+label {
+    margin: 0 20px 0 0;
+    font-size: 26px;
+    line-height: 50px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+/* Navigation slut */
+
+
+
+.logo {
+    width: 54px;
+    float: left;
+    background-color: white;
+}
+
+.bigphoto {
+    width: 100%;
+}
+
+#forside {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bigphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 220px;
+    position: relative;
+}
+
+#forside h1 {
+    font-family: "mistral";
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+main {
+    clear: both;
+    background-color: #eaeaea;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#seneste {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+#seneste::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 1px;
+    background-color: darkgrey;
+    transition: .5s;
+}
+
+#seneste:hover::after {
+    width: 100px;
+}
+
+em {
+    font-family: "times new roman"
+}
+
+main p {
+    background-color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin: auto;
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.maindivforside {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+    display: block;
+}
+
+.maindivpforside {
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    z-index: 2;
+    width: 100%;
+}
+
+div img {
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+#forsidebillede1 img {
+    width: 195%;
+}
+
+#forsidebillede2 img {
+    width: 145%;
+}
+
+#forsidebillede3 img {
+    width: 130%;
+}
+
+#forsidebillede4 img {
+    width: 120%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    background-color: white;
+    border-top: 1px solid darkgray;
+}
+
+footer a {
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+#artikler {
+    background-color: white;
+    margin: 0 auto;
+}
+
+#artikler h1 {
+    text-align: center;
+    line-height: 40px;
+    font-family: "big calson";
+    font-weight: 200;
+}
+
+#diy {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+h3 {
+    text-align: center;
+    font-family: "big calson";
+    font-weight: 200;
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+.artikelbilleder {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.artikelbillederslut {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+.artikelparagraf {
+    text-align: left;
+    font-size: 15px;
+    padding: 0;
+    line-height: 22px;
+
+}
+
+.artikelparagrafslut {
+    text-align: left;
+    font-size: 15px;
+    padding: 0;
+    line-height: 22px;
+
+}
+
+#artikelboks1 {
+    text-align: left;
+    font-size: 15px;
+    padding: 0;
+    background-color: #eaeaea;
+    margin: 12px 0 12px 0;
+    padding: 10px 20px 10px 20px;
+}
+
+#artikelboks2 {
+    text-align: left;
+    font-size: 15px;
+    padding: 0;
+    background-color: #eaeaea;
+    margin: 12px 0 12px 0;
+    padding: 10px 20px 10px 20px;
+}
+
+.artikelboks {
+    font-size: 15px;
+    background-color: #eaeaea;
+    margin: 12px 0 12px 0;
+    padding: 10px 20px 10px 20px;
+    line-height: 22px;
+}
+
+.ekstrabillede {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+#ekstrabilledesyning {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+#tekstboks {
+    font-size: 15px;
+    background-color: #eaeaea;
+    padding: 10px 20px 10px 20px;
+    line-height: 22px;
+    text-align: left;
+}
+
+#tekstbokssyning {
+    font-size: 15px;
+    background-color: #eaeaea;
+    padding: 10px 20px 10px 20px;
+    line-height: 22px;
+    text-align: left;
+}
+
+#butikkerbillede {
+    width: 100%;
+    margin: 10px 0 0px 0;
+}
+
+#butikkerparagraf {
+    text-align: left;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.span {
+    font-family: "marker felt";
+    font-size: 30px;
+}
+
+@media only screen and (max-width:960px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1.5px solid #EAEAEB;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    .menu a:first-child {
+        border-top: 1px solid #EAEAEB;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    .logo1 {
+        display: none;
+    }
+
+    .midterknap {
+        display: none;
+    }
+
+    .knap {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:960px) {
+    .logo {
+        display: none;
+    }
+
+    .logo1 {
+        display: block;
+        margin: 0 auto;
+        width: 90px;
+        background-color: white;
+    }
+
+    nav {
+        text-align: center;
+        border-top: 1.5px solid #eaeaea;
+        border-bottom: 1.5px solid #eaeaea;
+    }
+
+    .menu a {
+        margin: 40px;        
+    }
+
+    #forside {
+        height: 650px;
+    }
+
+    #forside h1 {
+        font-size: 100px;
+        top: 25%;
+        line-height: 98px;
+    }
+
+    .midterknap {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 5px;
+        position: absolute;
+        top: 60%;
+    }
+
+    .knap {
+        border: 1.5px solid white;
+        color: white;
+        padding: 8px 45px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .knap:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #forsidemain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .maindivforside {
+        width: 24%;
+        height: 450px;
+        margin: 20px;
+        position: relative;
+    }
+
+    .forsidebilleder {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .2s ease;
+        backface-visibility: hidden;
+    }
+
+    .forsidebilleder:hover {
+        opacity: 0.4;
+    }
+
+    #seneste {
+        font-size: 30px;
+        padding-top: 38px;
+    }
+
+    .artikelbilleder {
+        overflow: hidden;
+        display: block;
+        margin:0 auto;
+        padding-bottom: 10px;
+        width: 90%;
+    }
+
+    .ekstrabillede {
+        height: 100%;
+        width: 40%;
+    }
+
+    .artikelparagraf {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .flexboksdiy {
+        display: flex;
+        width: 100%;
+        margin:0 auto;
+    }
+
+    #artikelboks1 {
+        margin-top:20px;
+        width: 50%;
+        height: 70%;
+    }
+    #seneste{
+        margin-bottom: 15px;
+    }
+    .artikelboks{
+        width:70%;
+        margin-top: 20px; 
+        height:70%;
+    }
+    #tekstboks{
+        width:40%;
+    }
+    #ekstrabillede{
+        width: 22%;
+        height: 100%;
+    }
+    
+    #butikkerparagraf{
+        width: 70%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    #butikkerbillede{
+        width: 85%;
+        margin:0 auto;
+        display: block;
+    }
+    
+    #fleksboksbutikker{
+        display: flex;
+    }
+    
+    #artikelboks2{
+        margin-top:20px;
+        width: 30%;
+        height: 80%;
+    }
+    
+ .artikelbillederslut {
+        display: block;
+      margin: 2% 0 0 4%;
+        padding-bottom: 10px;
+        width: 70%;
+    }
+.artikelparagrafslut {
+    width: 70%;
+    margin:0 0 0 4%;
+}
+    #ekstrabilledesyning{
+        width: 40%;
+        margin: 0 0 0 4%;
+    }
+    #tekstbokssyning{
+        margin:0 0 0 4%;
+        width: 40%;
+    }
+    
+}
